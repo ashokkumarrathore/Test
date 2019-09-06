@@ -1,0 +1,41 @@
+{
+	"name": "linkedService1",
+	"properties": {
+		"annotations": [],
+		"type": "HDInsightOnDemand",
+		"typeProperties": {
+			"clusterType": "hadoop",
+			"clusterSize": 1,
+			"timeToLive": "00:15:00",
+			"version": "3.6",
+			"hostSubscriptionId": "cd1ef141-b206-4968-b30c-c67a02dbd7f0",
+			"clusterResourceGroup": "resgrp",
+			"servicePrincipalId": "serviceprincipal",
+			"tenant": "2638f43e-f77d-4fc7-ab92-7b753b7876fd",
+			"clusterNamePrefix": "",
+			"servicePrincipalKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "secret"
+			},
+			"additionalLinkedServiceNames": [
+				{
+					"referenceName": "AzureBlobStorage1",
+					"type": "LinkedServiceReference"
+				}
+			],
+			"linkedServiceName": {
+				"referenceName": "AzureBlobStorage1",
+				"type": "LinkedServiceReference"
+			},
+			"headNodeSize": "",
+			"dataNodeSize": "",
+			"zookeeperNodeSize": "",
+			"subnetName": "",
+			"virtualNetworkId": ""
+		}
+	}
+}
