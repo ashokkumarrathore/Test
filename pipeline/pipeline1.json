@@ -23,6 +23,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"rootPath": "container",
+					"entryFilePath": "Unnamed.py",
 					"sparkJobLinkedService": {
 						"referenceName": "AzureBlobStorage1",
 						"type": "LinkedServiceReference"
